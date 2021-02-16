@@ -1,0 +1,56 @@
+public class MyClass {
+
+    public static void main(String[]args){
+        System.out.println("Hello world");
+        String[] languages={"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"};
+
+        int n = (int) (Math.random() * 1_000_000);
+
+        System.out.println(n);
+
+        int m=n*3;
+        System.out.println(m);
+        int b=m+21;
+        System.out.println(b);
+
+        int h=b+255;
+        System.out.println(h);
+        int r=h*6;
+        System.out.println(r);
+
+
+       /* n = Integer.MAX_VALUE;
+        StringBuilder s = new StringBuilder();
+        System.out.println(n);
+        while(n>0) {
+            s.insert(0, n%10);
+            n = n / 10;
+        }
+        System.out.println(s.toString());
+
+        */
+
+
+
+        while (n > 0) {
+            int l = n % 10;
+            l=l+l;
+            System.out.println(l);
+           if(l>10) {
+               l=l%10;
+               break;
+
+            }
+
+            System.out.println("Willy-nilly, this semester I will learn " + languages[l]);
+
+
+    }
+
+
+
+
+    }
+
+
+}
